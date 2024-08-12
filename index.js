@@ -20,7 +20,7 @@ import {name as appName} from './app.json';
 import storeConfig from './src/store/storeConfig';
 
 import axios from 'axios';
-axios.defaults.baseURL = 'https://appblog-react-native-default-rtdb.firebaseio.com/'
+axios.defaults.baseURL = ''
  
 const store = storeConfig();
 const Redux = () => {

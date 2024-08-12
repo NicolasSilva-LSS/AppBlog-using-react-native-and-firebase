@@ -15,8 +15,8 @@ const fs = require('fs');
 const uuid = require('uuid-v4');
 const { Storage } = require('@google-cloud/storage');
 const storage = new Storage({
-    projectId: 'appblog-react-native',
-    keyFilename: 'appblog-react-native-firebase.json'
+    projectId: '',
+    keyFilename: ''
 })
 
 // Create and deploy your first functions
