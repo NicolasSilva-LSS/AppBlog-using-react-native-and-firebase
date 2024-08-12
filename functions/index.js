@@ -32,7 +32,7 @@ exports.uploadImage = onRequest((request, response) => {
     try{
         fs.writeFileSync('/tmp/imageToSave.jpg', request.body.image, 'base64')
 
-        const bucket = storage.bucket('appblog-react-native.appspot.com')
+        const bucket = storage.bucket('')
         const id = uuid()
         bucket.upload('/tmp/imageToSave.jpg', {
             uploadType: 'media',
@@ -49,7 +49,7 @@ exports.uploadImage = onRequest((request, response) => {
                 return response.status(500).json({error: err})
             }else{
                 const fileName = encodeURIComponent(file.name)
-                const imageUrl = 'https://firebasestorage.googleapis.com/v0/b/' 
+                const imageUrl = '' 
                     + bucket.name + '/o/' + fileName + '?alt=media&token=' + id
                 return response.status(201).json({imageUrl: imageUrl})
             }
