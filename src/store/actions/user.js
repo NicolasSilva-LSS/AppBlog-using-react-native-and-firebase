@@ -8,7 +8,7 @@ import {
 import axios from "axios"
 
 const authBaseURL = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty'
-const API_KEY = 'AIzaSyDfBkc0FOgAZ6WjXeyS5Z8hzW-LnnGhZcs'
+const API_KEY = ''
 
 export const userLogged = function(user) //export const login = user =>... is the same
 {
