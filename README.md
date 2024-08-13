@@ -1,4 +1,4 @@
-<img src="../assets/img/Captura de tela 2024-08-13 102029.png" alt="presentation">
+<img src="/assets/img/Captura de tela 2024-08-13 102029.png" alt="presentation">
 
 ##
 
